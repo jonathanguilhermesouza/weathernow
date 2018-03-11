@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR" ng-app="weatherNow">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="/app/images/favicon.ico">
+	<title>Desafio Frontend</title>
+	<link rel="stylesheet" type="text/css" href="/app/styles/style.css">	
+</head>
+<body>
+	<div ng-include="'app/views/shared/headbar.html'"></div>
+
+	<div ng-view></div>
+	<script src="/bower_components/jquery/dist/jquery.js"></script>
+	<script src="/bower_components/angular/angular.js"></script>
+	<script src="/bower_components/angular-route/angular-route.js"></script>
+
+	<script src="/app/app.js"></script>
+    <script src="/app/routes.js"></script>
+    <script src="/app/config.js"></script>
+	
+	<script src="/app/factories/openweathermap-factory.js"></script>
+	<script src="/app/controllers/home-controller.js"></script>
+	<script src="/app/directives/color-weather-directive.js"></script>
+	<script src="/app/services/util-service.js"></script>
+</body>
+</html>

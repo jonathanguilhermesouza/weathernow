@@ -1,0 +1,37 @@
+<div id="container" align="center">
+	<section class="card" ng-repeat="city in vm.listCities" >	
+		<header>		
+			{{city.name}}, {{city.country}}
+		</header>
+		<!--Enquanto não existir resposta da API o load estará visível-->
+		<div class="info-card center-box" ng-show="!city.isLoad">
+			<img src="/images/loader.svg">
+		</div>
+		<!--Caso exista uma resposta negativa da API estará visível-->
+		<div class="info-card center-box" ng-show="city.isLoad && city.containsError">
+			<div>
+				<p class="error-color">Something went wrong</p>
+				<button class="btn btn-transparent" ng-click="vm.getWeatherCityById(city)">Try Again</button>
+			</div>
+		</div>
+		<!--Caso exista uma resposta positiva da API estará visível-->
+		<div ng-show="!city.containsError && city.isLoad">
+			<article color-weather="{{city.temperature}}">	
+				{{city.temperature | number:0}}º
+			</article>		
+			<footer>
+				<div class="info-footer" ng-show="city.isDestaque">
+					<span class="info-footer-title">HUMIDITY</span><br ><br >
+				 	<span class="info-footer-detail">{{city.humidity}}%</span>
+				</div>
+				<div class="info-footer" ng-show="city.isDestaque">
+				 	<span class="info-footer-title">PRESSURE</span><br ><br >
+				 	<span class="info-footer-detail">{{city.pressure | number:0}}hPa</span>
+				</div>
+				<div class="info-footer-time">
+					Updated at {{city.updatedAt | date:'hh:mm:ssa'}}
+				</div>			
+			</footer>
+		</div>
+	</section>
+</div>
