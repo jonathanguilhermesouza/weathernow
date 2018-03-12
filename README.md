@@ -3,6 +3,9 @@ WeatherNow é um app que mostra a temperatura de 3 cidades definidas.
 
 ![Homepage WeatherNow](https://preview.ibb.co/kCU6v7/view_weathernow_home.png)
 
+## Como o app funciona?
+Existe uma lista default inicializada com 3 cidades no controller HomeCtrl, temos o id de cada cidade informado na lista default, caso queira trocar alguma cidade basta alterar o id (explore a API https://openweathermap.org/api e obtenha o id da cidade desejada), a cidade e sigla do Pais (estes dois são substituidos quando recuperado os dados da API, mas é bom trocar). Caso seja a primeira vez que está executando o projeto será realizada uma requisição para cada item da lista de cidades para recuperar os dados, após isto a lista é salva no local stogage por 10 minutos, caso você atualize a tela irá obter a lista salva no local storage, enquanto isso temos um timer rodando de 1 em 1 minuto, este timer chama uma função para atualizar a temperatura, porém a temperatura só será alterada caso a data hora entre a ultima atualização e a data hora atual for maior que 10. Para cada intervalo de temperatura temos uma cor, existe uma função no controller HomeCtrl que recebe a temperatura e devolve uma class css correspondente a temperatura, as cores são: azul para temperaturas baixas, laranja para temperaturas médias e vermelho para temperaturas altas. Caso ocorra algum erro na atualização de alguma cidade um botão "Try Again" é apresentado na tela para que tente recuperar a temperatura de determinada cidade.
+
 ## Tecnologias utilizadas
   O app foi desenvolvido utilizando:
 1. HTML5
