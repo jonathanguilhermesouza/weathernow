@@ -33,19 +33,19 @@ O git é um sistema para controle de versão, com ele conseguimos gerenciar noss
 
 3. Bower
 >
-O Bower é resposável por instalar os pacotes utilizados no front-end como angular, angular-route e etc. Para instalar o Bower iremos executar alguns comandos, abra o cmd no windows ou terminal no mackbook e digite o comando "npm install -g bower".
+O Bower é resposável por instalar os pacotes utilizados no front-end como angular, angular-route e etc. Para instalar o Bower iremos executar alguns comandos, abra o cmd no windows ou terminal no macbook e digite o comando "npm install -g bower".
 >
 ![Instalação do bower](https://image.ibb.co/e8ms2n/npm_install.png)
 
 4. Http-server
 >
-Para criar um servidor local para nossa aplicação devemos instalar o pacote http-server, para isso abra o cmd no windows ou terminal no mackbook e digite o comando "npm install -g http-server".
+Para criar um servidor local para nossa aplicação devemos instalar o pacote http-server, para isso abra o cmd no windows ou terminal no macbook e digite o comando "npm install -g http-server".
 >
 ![Instalação do http-server](https://image.ibb.co/dWWLoS/install_httpserver.png)
 
 5. Pacotes do frontend (agularJs, angular-route)
 >
-Alguns pacotes são necessários para rodar a aplicação, agora com auxilio do Bower vamos instalar os pacotes via linha de comando. Abra o cmd no windows ou terminal no mackbook e acesse a pasta da sua aplicação, os comandos para instalar os pacotes são:
+Alguns pacotes são necessários para rodar a aplicação, agora com auxilio do Bower vamos instalar os pacotes via linha de comando. Abra o cmd no windows ou terminal no macbook e acesse a pasta da sua aplicação, os comandos para instalar os pacotes são:
 
 * bower install angular --save
 >
@@ -69,7 +69,7 @@ altere o parâmetro APP_ID colocando sua chave de acesso.
 >
 
 ## Execução do projeto
-Agora está fácil, para rodar o projeto abra o cmd no windows ou terminal no mackbook e acesse a pasta da sua aplicação, após isto digite o comando "http-server -a localhost -p 8000".
+Agora está fácil, para rodar o projeto abra o cmd no windows ou terminal no macbook e acesse a pasta da sua aplicação, após isto digite o comando "http-server -a localhost -p 8000".
 
 Parâmetros
 >
