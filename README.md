@@ -5,12 +5,10 @@ WeatherNow é um app que mostra a temperatura de 3 cidades definidas.
 
 ## Tecnologias utilizadas
   O app foi desenvolvido utilizando:
-1. HTML
-2. HTML5
-3. CSS
-4. CSS3
-5. AngularJS
-5. SPA (Single Page Application)
+1. HTML5
+2. CSS3
+3. AngularJS
+4. SPA (Single Page Application)
 
 ## Estrutura do projeto
 ![Estrutura do projeto](https://image.ibb.co/g1tY8S/estrutura_do_projeto.png)
