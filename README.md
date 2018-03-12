@@ -27,15 +27,15 @@ WeatherNow é um app que mostra a temperatura de 3 cidades definidas.
 ## Instalação
 1. NodeJS e Npm
 >
-O NodeJS é uma plataforma utilizada para rodar aplicações javascript no servidor e o npm é o gerenciador de pacotes do NodeJs.Temos a necessidade de instalar esta plataforma pois iremos criar um servidor para rodar o projeto e também o Bower (gerencia pacotes do front end) requer o NodeJS e npm, então vamos lá instalar, para instalar basta acessar o link https://nodejs.org/en/ , baixar o instalador e realizar a instalação. 
+O NodeJS é uma plataforma utilizada para rodar aplicações javascript no servidor e o Npm é o gerenciador de pacotes do NodeJs. Temos a necessidade de instalar esta plataforma pois iremos criar um servidor para rodar o projeto e também o Bower (gerencia pacotes do front end) requer o NodeJS e npm, então vamos lá instalar, para instalar basta acessar o link https://nodejs.org/en/ , baixar o instalador e realizar a instalação. 
 
 2. Git
 >
-O git é um sistema para controle de versão, como ele conseguir gerenciar nossos repositórios de códigos. Para instalar basta acessar o link https://git-scm.com/, baixar o instalador e realizar a instalação.
+O git é um sistema para controle de versão, com ele conseguimos gerenciar nossos repositórios de códigos. Para instalar basta acessar o link https://git-scm.com/, baixar o instalador e realizar a instalação.
 
 3. Bower
 >
-O Bower é resposável por instalar os pacotes utilizados no front-end como angular, jquery e etc. Para instalar o Bower iremos utilizar comandos, abra o cmd no windows ou terminal no mackbook e digite o comando "npm install -g bower".
+O Bower é resposável por instalar os pacotes utilizados no front-end como angular, jquery e etc. Para instalar o Bower iremos executar alguns comandos, abra o cmd no windows ou terminal no mackbook e digite o comando "npm install -g bower".
 >
 ![Instalação do bower](https://image.ibb.co/e8ms2n/npm_install.png)
 
@@ -64,7 +64,7 @@ Alguns pacotes são necessários para rodar a aplicação, agora com auxilio do 
 
 ## Configuração
 1. Baixe o projeto WeatherNow em seu computador realizando download ou através do git.
-2. Obtenha uma chave de acesso da API no site OpenWeatherMap. Para obter uma chave de acesso você deve acessar o link https://openweathermap.org e criar um cadastro, após criar o cadastro acesse a aba API Keys e copie a chave.
+2. Obtenha uma chave de acesso da API no site OpenWeatherMap. Para obter uma chave de acesso você deve acessar o link https://openweathermap.org e criar um cadastro caso não tenha, após criar o cadastro acesse a aba API Keys e copie a chave.
 >
 ![Obtendo chave de acesso da API](https://preview.ibb.co/dieRv7/api.png)
 >  
@@ -75,13 +75,13 @@ altere o parâmetro APP_ID colocando sua chave de acesso.
 >
 
 ## Execução do projeto
-Agora está fácil, abra o cmd no windows ou terminal no mackbook e acesse a pasta da sua aplicação, após isto digite o comando "http-server -a localhost -p 8000".
+Agora está fácil, para rodar o projeto abra o cmd no windows ou terminal no mackbook e acesse a pasta da sua aplicação, após isto digite o comando "http-server -a localhost -p 8000".
 
 Parâmetros
 >
--a => Endereço da sua aplicação
+-a => Endereço da sua aplicação (pode ser localhost para teste)
 >
--p => Porta da sua aplicação
+-p => Porta da sua aplicação (qualquer porta que não esteja em uso)
 >
 ![Rodando a aplicação](https://preview.ibb.co/m26EF7/rodando_a_aplicacao.png)
 
