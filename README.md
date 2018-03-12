@@ -14,7 +14,7 @@ Existe uma lista default inicializada com 3 cidades no controller HomeCtrl, temo
 4. SPA (Single Page Application)
 
 ## Estrutura do projeto
-![Estrutura do projeto](https://image.ibb.co/g1tY8S/estrutura_do_projeto.png)
+![Estrutura do projeto](https://image.ibb.co/kQwHnn/estrutura_de_pastas.jpg)
 
 
 ## Requisitos para rodar o app
