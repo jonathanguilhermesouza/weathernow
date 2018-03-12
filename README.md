@@ -22,7 +22,7 @@ WeatherNow é um app que mostra a temperatura de 3 cidades definidas.
 2. Git
 3. Bower
 4. Http-server
-5. Pacotes do frontend (jquery, agularJs, angular-route)
+5. Pacotes do frontend (agularJs, angular-route)
 
 ## Instalação
 1. NodeJS e Npm
@@ -35,7 +35,7 @@ O git é um sistema para controle de versão, com ele conseguimos gerenciar noss
 
 3. Bower
 >
-O Bower é resposável por instalar os pacotes utilizados no front-end como angular, jquery e etc. Para instalar o Bower iremos executar alguns comandos, abra o cmd no windows ou terminal no mackbook e digite o comando "npm install -g bower".
+O Bower é resposável por instalar os pacotes utilizados no front-end como angular, angular-route e etc. Para instalar o Bower iremos executar alguns comandos, abra o cmd no windows ou terminal no mackbook e digite o comando "npm install -g bower".
 >
 ![Instalação do bower](https://image.ibb.co/e8ms2n/npm_install.png)
 
@@ -45,13 +45,9 @@ Para criar um servidor local para nossa aplicação devemos instalar o pacote ht
 >
 ![Instalação do http-server](https://image.ibb.co/dWWLoS/install_httpserver.png)
 
-5. Pacotes do frontend (jquery, agularJs, angular-route)
+5. Pacotes do frontend (agularJs, angular-route)
 >
 Alguns pacotes são necessários para rodar a aplicação, agora com auxilio do Bower vamos instalar os pacotes via linha de comando. Abra o cmd no windows ou terminal no mackbook e acesse a pasta da sua aplicação, os comandos para instalar os pacotes são:
-
-* bower install jquery --save
->
-![Instalação do jquery](https://image.ibb.co/dyGya7/install_jquery.png)
 
 * bower install angular --save
 >
