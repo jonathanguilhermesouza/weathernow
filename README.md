@@ -12,18 +12,8 @@ WeatherNow é um app que mostra a temperatura de 3 cidades definidas.
 5. AngularJS
 5. SPA (Single Page Application)
 
-## Estrutura de pastas
-* app
-  * controllers
-  * directives
-  * specs
-  * services
-  * views
-  * styles
-  * images
-  * factories
-* bower_components
-* node_modules
+## Estrutura do projeto
+![Estrutura do projeto](https://image.ibb.co/g1tY8S/estrutura_do_projeto.png)
 
 
 ## Requisitos para rodar o app
@@ -36,6 +26,7 @@ WeatherNow é um app que mostra a temperatura de 3 cidades definidas.
 
 ## Instalação
 1. NodeJS e Npm
+>
 O NodeJS é uma plataforma utilizada para rodar aplicações javascript no servidor e o npm é o gerenciador de pacotes do NodeJs.Temos a necessidade de instalar esta plataforma pois iremos criar um servidor para rodar o projeto e também o Bower (gerencia pacotes do front end) requer o NodeJS e npm, então vamos lá instalar, para instalar basta acessar o link https://nodejs.org/en/ , baixar o instalador e realizar a instalação. 
 
 2. Git
