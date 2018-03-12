@@ -94,4 +94,13 @@ Parâmetros
 >
 ![Rodando a aplicação](https://preview.ibb.co/m26EF7/rodando_a_aplicacao.png)
 
+## Preview
+1. Desktop
+>
+![Homepage WeatherNow](https://preview.ibb.co/kCU6v7/view_weathernow_home.png)
+>
+2. Mobile
+>
+![Homepage WeatherNow](https://image.ibb.co/hKafoS/visualizacao_versao_resuzida.png)
+
 
