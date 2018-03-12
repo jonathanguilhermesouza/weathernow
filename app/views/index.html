@@ -16,7 +16,7 @@
 		</div>
 		<!--Caso exista uma resposta positiva da API estará visível-->
 		<div ng-show="!city.containsError && city.isLoad">
-			<article color-weather="{{city.temperature}}">	
+			<article class="{{vm.getColorByTemperature(city.temperature)}}">	
 				{{city.temperature | number:0}}º
 			</article>		
 			<footer>

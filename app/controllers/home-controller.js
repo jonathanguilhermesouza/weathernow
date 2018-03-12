@@ -3,14 +3,15 @@
 	'use strict';
 	angular.module('weatherNow').controller('HomeCtrl', HomeCtrl);
 
-	HomeCtrl.$inject = ['OpenWeatherMapFactory', '$interval','UtilService', 'orderByFilter','$scope'];
+	HomeCtrl.$inject = ['OpenWeatherMapFactory', '$interval','UtilService', '$scope'];
 
-	function HomeCtrl(OpenWeatherMapFactory, $interval, UtilService, orderBy, $scope) {
+	function HomeCtrl(OpenWeatherMapFactory, $interval, UtilService, $scope) {
 
 		var vm = this;
 
 		//functions
 		vm.getWeatherCityById = getWeatherCityById;
+		vm.getColorByTemperature = getColorByTemperature;
 
 		//variáveis
 		var listCitiesDefault = [
@@ -71,6 +72,16 @@
 			activateTimer();
 			checkResolutionScreen();
 		}	
+
+		/*Devolve a class correspondente a cor de acordo com a temperatura da cidade*/
+		function getColorByTemperature(temperature){
+			if(temperature <= 5)
+            	return 'temparature-baixa';
+        	else if(temperature >= 6 && temperature <= 25)
+            	return 'temparature-media';
+        	else if(temperature > 26)
+            	return 'temperature-alta';
+		}
 
 		/*Identifica alteração na resolução de tela para alterar o tipo de ordenação
 		  orderDesktop ou orderMobile*/

@@ -4,9 +4,7 @@ angular.module('weatherNow').directive('colorWeather', function(){
       link: function ($scope, element, attrs) {
 
         var temperature = parseInt(attrs.colorWeather);
-        console.log(attrs.colorWeather);
-        console.log(attrs);
-        console.log(temperature);
+       
         if(temperature <= 5)
             element.attr('class', 'temparature-baixa');
         else if(temperature >= 6 && temperature <= 25)

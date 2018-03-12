@@ -23,31 +23,28 @@ body{
 	margin: 0;
 	padding: 0;
 	background-color: var(--color-background-body);	
-	font-size: 12pt;
 	font-family:"Helvetica", "Arial";
 	color: var(--color-strong);
+	text-align: center;
 }
 
 section header{
-	padding: 13px;
-	text-align: center;
+	padding: 13px;	
+	font-size: 13pt;
 	border-bottom: 1px solid var(--color-divider);
 }
 
 section article{
 	padding: 30px;
 	font-size: 60pt;
-	text-align: center;
 }
 
 section footer{	
 	padding: 10px;
-	text-align: center;	
 	background-color: var(--color-footer);
 }
 
 #tolbar{
-	text-align: center;
 	padding: 13px;
 	position: fixed;
 	top:0;
@@ -61,17 +58,16 @@ section footer{
 }
 
 #container{
-	background-color: var(--color-divider);
+	background-color: var(--color-container);
 	margin: 0 auto;
 	margin-top: 54px;
 }
 
 .card{
 	width: 250px;	
-	text-align: center;
 	margin: 0 auto;
-	margin: 15px;
-	box-shadow: 2px 1px 10px var(--color-box-shadow-card);
+	margin: 25px 25px 10px;
+	box-shadow: 3px 3px 3px var(--color-box-shadow-card);
 	background-color: var(--color-background-card);
 	border-radius: 4px;
 }
@@ -148,7 +144,7 @@ section footer{
 @media screen and (min-width:600px){
     #container {
        	width: 1024px;
-		height: 700px;
+		height: 830px;
 		justify-content: center;
 		align-items: center;
 		display: flex;
