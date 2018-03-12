@@ -36,21 +36,27 @@ WeatherNow é um app que mostra a temperatura de 3 cidades definidas.
 
 ## Instalação
 1. NodeJS e Npm
-Como o Bower (gerencia pacotes do front end) requer o NodeJS e npm vamos lá instalar, para instalar basta acessar https://nodejs.org/en/ e baixar o instalador e realize a instalação. 
+O NodeJS é uma plataforma utilizada para rodar aplicações javascript no servidor e o npm é o gerenciador de pacotes do NodeJs.Temos a necessidade de instalar esta plataforma pois iremos criar um servidor para rodar o projeto e também o Bower (gerencia pacotes do front end) requer o NodeJS e npm, então vamos lá instalar, para instalar basta acessar o link https://nodejs.org/en/ , baixar o instalador e realizar a instalação. 
 
 2. Git
-Acesse o link https://git-scm.com/, baixe o instalador e realize a instalação.
+>
+O git é um sistema para controle de versão, como ele conseguir gerenciar nossos repositórios de códigos. Para instalar basta acessar o link https://git-scm.com/, baixar o instalador e realizar a instalação.
 
 3. Bower
-Para instalar o Bower iremos utilizar comandos, abra o cmd no windows ou terminal no mackbook e digite o comando "npm install -g bower".
+>
+O Bower é resposável por instalar os pacotes utilizados no front-end como angular, jquery e etc. Para instalar o Bower iremos utilizar comandos, abra o cmd no windows ou terminal no mackbook e digite o comando "npm install -g bower".
+>
 ![Instalação do bower](https://image.ibb.co/e8ms2n/npm_install.png)
 
 4. Http-server
+>
 Para criar um servidor local para nossa aplicação devemos instalar o pacote http-server, para isso abra o cmd no windows ou terminal no mackbook e digite o comando "npm install -g http-server".
+>
 ![Instalação do http-server](https://image.ibb.co/dWWLoS/install_httpserver.png)
 
 5. Pacotes do frontend (jquery, agularJs, angular-route)
-Alguns pacotes são necessários para rodar a aplicação, agora com auxilio do Bower vamos instalar os pacotes via linha de comando. Abra o cmd no windows ou terminal no mackbook e acessa a pasta da sua aplicação, os comandos são:
+>
+Alguns pacotes são necessários para rodar a aplicação, agora com auxilio do Bower vamos instalar os pacotes via linha de comando. Abra o cmd no windows ou terminal no mackbook e acesse a pasta da sua aplicação, os comandos para instalar os pacotes são:
 
 * bower install jquery --save
 >
@@ -78,13 +84,14 @@ altere o parâmetro APP_ID colocando sua chave de acesso.
 >
 
 ## Execução do projeto
-Agora está fácil, abra o cmd no windows ou terminal no mackbook e acessa a pasta da sua aplicação, após isto digite o comando "http-server -a localhost -p 8000".
+Agora está fácil, abra o cmd no windows ou terminal no mackbook e acesse a pasta da sua aplicação, após isto digite o comando "http-server -a localhost -p 8000".
 
 Parâmetros
 >
 -a => Endereço da sua aplicação
 >
 -p => Porta da sua aplicação
-
+>
+![Rodando a aplicação](https://preview.ibb.co/m26EF7/rodando_a_aplicacao.png)
 
 
