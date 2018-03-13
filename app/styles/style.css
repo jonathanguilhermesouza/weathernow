@@ -72,21 +72,6 @@ section footer{
 	border-radius: 4px;
 }
 
-.info-footer{
-	display: inline-block;
-	width: 49%;
-}
-
-.info-card{	
-	height: 177px;
-}
-
-.center-box{
-	justify-content: center;
-	align-items: center;
-	display: flex;
-}
-
 .error-color{
 	color: var(--color-error);
 }
@@ -115,19 +100,42 @@ section footer{
 	color: var(--color-temperatura-alta); 
 }
 
+.info-footer{
+	display: inline-block;
+	width: 49%;
+}
+
+.info-card{	
+	height: 177px;
+}
+
+.center-box{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
 .info-footer-detail{
 	color: var(--color-strong); 
 	font-size: 13pt;
 }
 
+.info-footer-detail-unidades{
+	font-size: 8pt;
+}
+
 .info-footer-title{
 	color: var(--color-footer-title);
-	font-size: 10pt;
+	font-size: 10pt;	
+}
+
+.info-footer-title-margin{
+	margin-bottom: 5px;
 }
 
 .info-footer-time{
 	color: var(--color-footer-time);;
-	margin: 5px;
+	margin: 7px;
 	font-size: 7pt;
 }
 
@@ -144,10 +152,9 @@ section footer{
 @media screen and (min-width:600px){
     #container {
        	width: 1024px;
-		height: 830px;
+		height: 835px;
 		justify-content: center;
 		align-items: center;
 		display: flex;
     }
 }
-

@@ -79,7 +79,7 @@
             	return 'temparature-baixa';
         	else if(temperature >= 6 && temperature <= 25)
             	return 'temparature-media';
-        	else if(temperature > 26)
+        	else if(temperature >= 26)
             	return 'temperature-alta';
 		}
 
@@ -107,9 +107,8 @@
 		function getWeatherAllCity(){
 
 			var listCitiesFromLocalStorage = UtilService.getItemLocalStorage(listCityLocalStorage);
-			var isInvalidList = angular.isUndefined(listCitiesFromLocalStorage) || listCitiesFromLocalStorage === null;
 			
-			if(!isInvalidList)
+			if(listCitiesFromLocalStorage)
 				vm.listCities = angular.copy(listCitiesFromLocalStorage);
 			else {
 				vm.listCities = angular.copy(listCitiesDefault);

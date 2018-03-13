@@ -1,4 +1,4 @@
-describe('Conjunto de testes', function(){
+describe('Unit test Controller', function(){
 
 	beforeEach(module('weatherNow'));
 
@@ -8,7 +8,7 @@ describe('Conjunto de testes', function(){
 	/*
 		OBS: No activate() do controller está sendo chamado método que faz requisições a API, 
 		ao comentar a chamada dos métodos em ativate() funciona, ao decomentar ocorre o erro Unexpected request: GET http://api...,
-		não consegui solucionar a tempo este problema e prosseguir com testes automatizados
+		não consegui solucionar a tempo este problema e prosseguir criando testes automatizados
 	*/
 
 	beforeEach(inject(function(_$controller_,_$rootScope_){
@@ -17,11 +17,11 @@ describe('Conjunto de testes', function(){
  		vm = $controller('HomeCtrl',{ $scope: $scope});
 	}));
 
-	it('Servico Existe?', function(){
+	it('Service exist?', function(){
 		expect($controller).toBeDefined();
 	});
 
-	it('vm está definida em HomeCtrl?', function(){
+	it('vm is defined in HomeCtrl?', function(){
 		expect(vm).toBeDefined();
 	});
 

@@ -20,14 +20,18 @@
 				{{city.temperature | number:0}}º
 			</article>		
 			<footer>
-				<div class="info-footer" ng-show="city.isDestaque">
-					<span class="info-footer-title">HUMIDITY</span><br ><br >
-				 	<span class="info-footer-detail">{{city.humidity}}%</span>
+				<div class="info-footer info-footer-title-margin" ng-show="city.isDestaque">
+					<span class="info-footer-title ">HUMIDITY</span>
 				</div>
+                <div class="info-footer info-footer-title-margin" ng-show="city.isDestaque">
+                    <span class="info-footer-title">PRESSURE</span>
+                </div>
 				<div class="info-footer" ng-show="city.isDestaque">
-				 	<span class="info-footer-title">PRESSURE</span><br ><br >
-				 	<span class="info-footer-detail">{{city.pressure | number:0}}hPa</span>
-				</div>
+                     <span class="info-footer-detail">{{city.humidity}}</span><span class="info-footer-detail-unidades">%</span>
+                </div>
+                <div class="info-footer" ng-show="city.isDestaque">
+                    <span class="info-footer-detail">{{city.pressure | number:0}}</span><span class="info-footer-detail-unidades">hPa</span>
+                </div>
 				<div class="info-footer-time">
 					Updated at {{city.updatedAt | date:'hh:mm:ssa'}}
 				</div>			
